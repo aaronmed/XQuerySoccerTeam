@@ -1,0 +1,290 @@
+<team>
+    <players>
+        <player>
+            <name>Raúl Fernández</name>
+            <number>1</number>
+            <age>32</age>
+            <position>Goalkeeper</position>
+            <country>Spain</country>
+            <height>195cm</height>
+            <weight>92kg</weight>
+            <birthdate>13/03/1988</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Josep Martínez</name>
+            <number>13</number>
+            <age>21</age>
+            <position>Goalkeeper</position>
+            <country>Spain</country>
+            <height>191cm</height>
+            <weight>78kg</weight>
+            <birthdate>27/05/1998</birthdate>
+            <foot>Both</foot>
+        </player>
+        <player>
+            <name>Álvaro Valles</name>
+            <number>32</number>
+            <age>22</age>
+            <position>Goalkeeper</position>
+            <country>Spain</country>
+            <height>190cm</height>
+            <weight>78kg</weight>
+            <birthdate>25/07/1997</birthdate>
+            <foot>Both</foot>
+        </player>
+        <player>
+            <name>Mauricio Lemos</name>
+            <number>2</number>
+            <age>24</age>
+            <position>Defender</position>
+            <country>Uruguay</country>
+            <height>187cm</height>
+            <weight>85kg</weight>
+            <birthdate>28/12/1995</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Alberto de la Bella</name>
+            <number>3</number>
+            <age>34</age>
+            <position>Defender</position>
+            <country>Spain</country>
+            <height>182cm</height>
+            <weight>79kg</weight>
+            <birthdate>02/12/1985</birthdate>
+            <foot>Left</foot>
+        </player>
+        <player>
+            <name>Álex Suárez</name>
+            <number>4</number>
+            <age>27</age>
+            <position>Defender</position>
+            <country>Spain</country>
+            <height>178cm</height>
+            <weight>72kg</weight>
+            <birthdate>13/03/1993</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Martín Mantovani</name>
+            <number>5</number>
+            <age>35</age>
+            <position>Defender</position>
+            <country>Argentina</country>
+            <height>182cm</height>
+            <weight>77kg</weight>
+            <birthdate>07/07/1984</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Eric Curbelo</name>
+            <number>6</number>
+            <age>26</age>
+            <position>Defender</position>
+            <country>Spain</country>
+            <height>179cm</height>
+            <weight>75kg</weight>
+            <birthdate>14/01/1994</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Álvaro Lemos</name>
+            <number>14</number>
+            <age>26</age>
+            <position>Defender</position>
+            <country>Spain</country>
+            <height>175cm</height>
+            <weight>76kg</weight>
+            <birthdate>13/03/1988</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Dani Castellano</name>
+            <number>23</number>
+            <age>32</age>
+            <position>Defender</position>
+            <country>Spain</country>
+            <height>180cm</height>
+            <weight>67kg</weight>
+            <birthdate>02/11/1987</birthdate>
+            <foot>Left</foot>
+        </player>
+        <player>
+            <name>Aythami Artiles</name>
+            <number>25</number>
+            <age>34</age>
+            <position>Defender</position>
+            <country>Spain</country>
+            <height>183cm</height>
+            <weight>80kg</weight>
+            <birthdate>02/04/1986</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Benito Ramírez</name>
+            <number>11</number>
+            <age>24</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>179cm</height>
+            <weight>68kg</weight>
+            <birthdate>11/07/1995</birthdate>
+            <foot>Left</foot>
+        </player>
+        <player>
+            <name>Juanjo Narváez</name>
+            <number>12</number>
+            <age>25</age>
+            <position>Midfielder</position>
+            <country>Colombia</country>
+            <height>180cm</height>
+            <weight>82kg</weight>
+            <birthdate>12/02/1995</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Fabio González</name>
+            <number>15</number>
+            <age>23</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>177cm</height>
+            <weight>66kg</weight>
+            <birthdate>12/02/1997</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Fede Varela</name>
+            <number>16</number>
+            <age>24</age>
+            <position>Midfielder</position>
+            <country>Argentina</country>
+            <height>173cm</height>
+            <weight>71kg</weight>
+            <birthdate>07/05/1996</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Javi Castellano</name>
+            <number>18</number>
+            <age>32</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>182cm</height>
+            <weight>68kg</weight>
+            <birthdate>02/11/1987</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Iñigo Ruiz de Galarreta</name>
+            <number>19</number>
+            <age>26</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>175cm</height>
+            <weight>68kg</weight>
+            <birthdate>06/08/1993</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Kirian Rodríguez</name>
+            <number>20</number>
+            <age>24</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>177cm</height>
+            <weight>72kg</weight>
+            <birthdate>05/03/1996</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Tana</name>
+            <number>21</number>
+            <age>29</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>169cm</height>
+            <weight>72kg</weight>
+            <birthdate>20/09/1990</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Cristian Cedrés</name>
+            <number>22</number>
+            <age>24</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>171cm</height>
+            <weight>66kg</weight>
+            <birthdate>24/01/1996</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Slavojlub Srnic</name>
+            <number>24</number>
+            <age>28</age>
+            <position>Midfielder</position>
+            <country>Serbia</country>
+            <height>174cm</height>
+            <weight>64kg</weight>
+            <birthdate>12/01/1992</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Pedri González</name>
+            <number>28</number>
+            <age>17</age>
+            <position>Midfielder</position>
+            <country>Spain</country>
+            <height>174cm</height>
+            <weight>60kg</weight>
+            <birthdate>25/11/2002</birthdate>
+            <foot>Both</foot>
+        </player>
+        <player>
+            <name>Rubén Castro</name>
+            <number>7</number>
+            <age>38</age>
+            <position>Forward</position>
+            <country>Spain</country>
+            <height>169cm</height>
+            <weight>69kg</weight>
+            <birthdate>27/06/1981</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Aridai Cabrera</name>
+            <number>8</number>
+            <age>31</age>
+            <position>Forward</position>
+            <country>Spain</country>
+            <height>170cm</height>
+            <weight>71kg</weight>
+            <birthdate>26/09/1988</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Jean-Armel Drolé</name>
+            <number>9</number>
+            <age>22</age>
+            <position>Forward</position>
+            <country>Cote d'Ivoire</country>
+            <height>185cm</height>
+            <weight>71kg</weight>
+            <birthdate>18/08/1997</birthdate>
+            <foot>Right</foot>
+        </player>
+        <player>
+            <name>Cristian López</name>
+            <number>17</number>
+            <age>30</age>
+            <position>Forward</position>
+            <country>Spain</country>
+            <height>185cm</height>
+            <weight>77kg</weight>
+            <birthdate>24/07/1989</birthdate>
+            <foot>Right</foot>
+        </player>
+    </players>
+</team>
