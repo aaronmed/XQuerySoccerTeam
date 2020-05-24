@@ -5,7 +5,7 @@ declare
   %rest:path('/team')
   %output:method('html')
   %output:doctype-system('about:legacy-compact')
-function page:start(
+function page:showTable(
 ) as element(html) {
   <html>
     <head>
@@ -36,36 +36,48 @@ function page:start(
     </div>
     <!-- Jumbotron -->
     <div id="table-container" class="container">
-            <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th class="th-sm">Number</th>
-                        <th class="th-sm">Name</th>
-                        <th class="th-sm">Age</th>
-                        <th class="th-sm">Position</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        {
-                        for $team in doc("team")/team/players/player
-                        order by $team/age
-                        return <tr>
-                                    <td>{$team/number/text()}</td>
-                                    <td>{$team/name/text()}</td>
-                                    <td>{$team/age/text()}</td>
-                                    <td>{$team/position/text()}</td>
-                              </tr>
-                        }
-                </tbody>
-            </table>
-            <!-- Material input -->
-            <form action="/team/search" method="POST">
-                <div class="md-form">
-                  <input type="text" name="num" class="form-control"/>
-                  <label for="form1">Search a player by number</label>
-                      <input type="submit"></input>
-                </div>
-            </form>
+        <div class="row">
+            <div class="col-8">
+                <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="th-sm">Number</th>
+                                        <th class="th-sm">Name</th>
+                                        <th class="th-sm">Age</th>
+                                        <th class="th-sm">Position</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        {
+                                        for $team in doc("team")/team/players/player
+                                        order by $team/age
+                                        return <tr>
+                                                    <td>{$team/number/text()}</td>
+                                                    <td>{$team/name/text()}</td>
+                                                    <td>{$team/age/text()}</td>
+                                                    <td>{$team/position/text()}</td>
+                                              </tr>
+                                        }
+                                </tbody>
+                            </table>
+            </div>
+            <div class="col-4">
+              <div id="add-button" class="container">
+                      <form action="/team/add" method="POST">
+                          <div class="md-form">
+                              <button type="submit" class="btn blue-gradient" path="/team/add">Add new player</button>
+                          </div>
+                      </form>
+                      <form id="search-form" action="/team/search" method="POST">
+                          <div class="md-form">
+                            <input type="text" name="num" class="form-control"/>
+                            <label for="form1">Search a player by number</label>
+                                <button type="submit" class="btn blue-gradient" name="search">Search player</button>
+                          </div>
+                      </form>
+                  </div>
+            </div>
+          </div>
         </div>
 
         <!-- JQuery -->

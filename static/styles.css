@@ -20,7 +20,36 @@ table.dataTable thead .sorting_desc_disabled:before {
     width: 8%;
 }
 
+#return{
+    margin-top: 34vh;
+}
+
 #detailed{
-    width: 50vh;
+    width: 20vh;
     text-align: center;
+}
+
+#form-add{
+    margin-top: 1em;
+}
+
+#form-modify{
+    display: none;
+}
+
+#return-insert{
+    margin-top: 1vh;
+    text-align:right;
+}
+
+#search-form{
+    margin-top: 35vh;
+}
+
+#search-container{
+    margin-top: 5vh;
+}
+
+#delete-button{
+    margin-top: 5vh;
 }

@@ -1,12 +1,12 @@
 module namespace page = 'http://artiigo.com';
 
 declare
-  %rest:path('/team/search')
   %rest:POST
-  %rest:form-param("num","{$num}","(no num)")
+  %rest:path('/team/search')
+  %rest:form-param("num","{$num}","(nonum)")
   %output:method('html')
   %output:doctype-system('about:legacy-compact')
-function page:start(
+function page:searchPlayer(
  $num as xs:string
 ) as element(html) {
   <html>
@@ -21,7 +21,7 @@ function page:start(
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet"/>
         <link href="../static/styles.css" rel="stylesheet"/>
-      <title>Team</title>
+      <title>Team - Search</title>
     </head>
     <body>
     <!-- Jumbotron -->
@@ -37,62 +37,101 @@ function page:start(
       </div>
     </div>
     <!-- Jumbotron -->
-    <div id="detailed" class="container">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-
-            {
-            for $player in doc("team")/team/players/player
-            where $player/number = $num
-            return
-                <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td>{$player/name/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Number</td>
-                        <td>{$player/number/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Age</td>
-                        <td>{$player/age/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Position</td>
-                        <td>{$player/position/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Country</td>
-                        <td>{$player/country/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Height</td>
-                        <td>{$player/height/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Weight</td>
-                        <td>{$player/weight/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Birthdate</td>
-                        <td>{$player/birthdate/text()}</td>
-                    </tr>
-                    <tr>
-                        <td>Foot</td>
-                        <td>{$player/foot/text()}</td>
-                    </tr>
-                </tbody>
-            }
-        </table>
-        <button type="button" class="btn aqua-gradient" onclick="history.back()">Return to home</button>
+    <div id ="search-container" class="container">
+        <div class="row">
+            <div class="col-8">
+                <table id ="table-search" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                        {
+                        for $player in doc("team")/team/players/player
+                        where $player/number = $num
+                        return
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>{$player/name/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Number</td>
+                                    <td>{$player/number/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Age</td>
+                                    <td>{$player/age/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Position</td>
+                                    <td>{$player/position/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>{$player/country/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>{$player/height/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>{$player/weight/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Birthdate</td>
+                                    <td>{$player/birthdate/text()}</td>
+                                </tr>
+                                <tr>
+                                    <td>Foot</td>
+                                    <td>{$player/foot/text()}</td>
+                                </tr>
+                            </tbody>
+                        }
+                </table>
+                 {
+                    for $player in doc("team")/team/players/player
+                    where $player/number = $num
+                    return
+                 <form id="form-modify" action="/team/modify" class="border border-light p-5" method="POST">
+                    <p class="h4 mb-4 text-center">Modify player</p>
+                    <input type="hidden" id="id" name="id" value="{$player/id/text()}"/>
+                    <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Name" value="{$player/name/text()}"/>
+                    <input type="number" id="number" name="num" class="form-control mb-4" placeholder="Number" value="{$player/number/text()}"/>
+                    <input type="number" id="age" name="age" class="form-control mb-4" placeholder="Age" value="{$player/age/text()}"/>
+                    <input type="text" id="position" name="position" class="form-control mb-4" placeholder="Position" value="{$player/position/text()}"/>
+                    <input type="text" id="country" name="country" class="form-control mb-4" placeholder="Country" value="{$player/country/text()}"/>
+                    <input type="text" id="height" name="height" class="form-control mb-4" placeholder="Height" value="{$player/height/text()}"/>
+                    <input type="text" id="weight" name="weight" class="form-control mb-4" placeholder="Weight" value="{$player/weight/text()}"/>
+                    <input type="date" id="birthdate" name="birthdate" class="form-control mb-4" placeholder="Birthdate" value="{$player/birthdate/text()}"/>
+                    <input type="text" id="foot" name="foot" class="form-control mb-4" placeholder="Foot" value="{$player/foot/text()}"/>
+                    <button class="btn btn-info btn-block my-4 blue-gradient" type="submit">Modify</button>
+                    <button id="cancel-modify" class="btn btn-info btn-block my-4 blue-gradient" type="button">Cancel</button>
+                </form>
+                }
+            </div>
+            <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <button id="modify-button" type="button" class="btn blue-gradient">Modify player</button>
+                        </div>
+                        <div id="delete-button" class="row">
+                            <form class="form" action="/team/delete" method="POST">
+                                <input type="hidden" name="num" value="{$num}"/>
+                                <button type="submit" class="btn blue-gradient">Delete player</button>
+                            </form>
+                        </div>
+                        <div id="return" class="row">
+                            <a href="/team" type="submit" class="btn blue-gradient">Return</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
     </div>
         <!-- JQuery -->
+        <script type="text/javascript" src="../static/search.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -101,7 +140,6 @@ function page:start(
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-        <script type="../text/javascript" src="static/table.js"></script>
     </body>
   </html>
 };

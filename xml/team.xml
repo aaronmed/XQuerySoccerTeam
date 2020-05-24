@@ -1,6 +1,7 @@
 <team>
     <players>
         <player>
+            <id>c2f6d084-a4c7-4443-b69a-715e9c97e6ac</id>
             <name>Raúl Fernández</name>
             <number>1</number>
             <age>32</age>
@@ -12,6 +13,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>478337a5-6ee8-4a3e-b164-c9e0f3ee3ff3</id>
             <name>Josep Martínez</name>
             <number>13</number>
             <age>21</age>
@@ -23,6 +25,7 @@
             <foot>Both</foot>
         </player>
         <player>
+            <id>f4c62ae6-e223-480a-a044-d56979bae270</id>
             <name>Álvaro Valles</name>
             <number>32</number>
             <age>22</age>
@@ -34,6 +37,7 @@
             <foot>Both</foot>
         </player>
         <player>
+            <id>06b8b615-7fd1-4dab-9f0e-0a972cc8803e</id>
             <name>Mauricio Lemos</name>
             <number>2</number>
             <age>24</age>
@@ -45,6 +49,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>7f5a91aa-8d33-4ee0-989b-d21c94bf7415</id>
             <name>Alberto de la Bella</name>
             <number>3</number>
             <age>34</age>
@@ -56,6 +61,7 @@
             <foot>Left</foot>
         </player>
         <player>
+            <id>9ad898c0-14a6-4af3-beaa-df18a2d8f665</id>
             <name>Álex Suárez</name>
             <number>4</number>
             <age>27</age>
@@ -67,6 +73,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>4f8905a3-0a96-4731-bb3d-8ae6df11891d</id>
             <name>Martín Mantovani</name>
             <number>5</number>
             <age>35</age>
@@ -78,6 +85,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>f7d318fa-44e4-4232-a68a-666d9416d425</id>
             <name>Eric Curbelo</name>
             <number>6</number>
             <age>26</age>
@@ -89,6 +97,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>ae0974ed-47ae-4967-96db-d16c5aab8bfb</id>
             <name>Álvaro Lemos</name>
             <number>14</number>
             <age>26</age>
@@ -100,6 +109,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>5b71be9c-6e71-4913-b08c-946cb00fb558</id>
             <name>Dani Castellano</name>
             <number>23</number>
             <age>32</age>
@@ -111,6 +121,7 @@
             <foot>Left</foot>
         </player>
         <player>
+            <id>32a41555-68b3-4025-9c16-5b1cda361107</id>
             <name>Aythami Artiles</name>
             <number>25</number>
             <age>34</age>
@@ -122,6 +133,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>1d4c6410-68da-4370-a55a-a1b11ddb1c95</id>
             <name>Benito Ramírez</name>
             <number>11</number>
             <age>24</age>
@@ -133,6 +145,7 @@
             <foot>Left</foot>
         </player>
         <player>
+            <id>26af9325-8d9e-47d0-8a4a-e81fbda93613</id>
             <name>Juanjo Narváez</name>
             <number>12</number>
             <age>25</age>
@@ -144,6 +157,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>ded7ebe0-c5f2-4343-aece-ff18e7e0a25f</id>
             <name>Fabio González</name>
             <number>15</number>
             <age>23</age>
@@ -155,6 +169,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>0254c90e-285c-4f38-a0a3-eeb01714ab3f</id>
             <name>Fede Varela</name>
             <number>16</number>
             <age>24</age>
@@ -166,6 +181,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>b9e9d570-87ea-4f94-93e7-8ed4f8f9063b</id>
             <name>Javi Castellano</name>
             <number>18</number>
             <age>32</age>
@@ -177,6 +193,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>f2b2990a-a24a-471c-a02c-ad031c367e7b</id>
             <name>Iñigo Ruiz de Galarreta</name>
             <number>19</number>
             <age>26</age>
@@ -188,6 +205,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>cc07e12e-eafb-40a1-9669-214efc5d5efd</id>
             <name>Kirian Rodríguez</name>
             <number>20</number>
             <age>24</age>
@@ -199,6 +217,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>63aaa4b2-8c2d-4b72-81f7-1611725c6bde</id>
             <name>Tana</name>
             <number>21</number>
             <age>29</age>
@@ -210,6 +229,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>abb08a2c-7c53-4dfc-a839-b4b42517b4d7</id>
             <name>Cristian Cedrés</name>
             <number>22</number>
             <age>24</age>
@@ -221,6 +241,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>c87efd10-a823-4418-8a60-ea4e25257682</id>
             <name>Slavojlub Srnic</name>
             <number>24</number>
             <age>28</age>
@@ -232,6 +253,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>e7aac277-9d50-455b-ac0b-cae285de5b64</id>
             <name>Pedri González</name>
             <number>28</number>
             <age>17</age>
@@ -243,6 +265,7 @@
             <foot>Both</foot>
         </player>
         <player>
+            <id>26925904-6f06-4824-b4bc-2e7397f83d5f</id>
             <name>Rubén Castro</name>
             <number>7</number>
             <age>38</age>
@@ -254,6 +277,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>c1f6ccb0-8976-41e4-b44b-2d9480919e2a</id>
             <name>Aridai Cabrera</name>
             <number>8</number>
             <age>31</age>
@@ -265,6 +289,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>43057a5c-ce5d-4a66-bf55-5a7c7fcd3dd6</id>
             <name>Jean-Armel Drolé</name>
             <number>9</number>
             <age>22</age>
@@ -276,6 +301,7 @@
             <foot>Right</foot>
         </player>
         <player>
+            <id>0b473168-1501-48ed-9035-2dd9db4c80a8</id>
             <name>Cristian López</name>
             <number>17</number>
             <age>30</age>
