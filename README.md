@@ -20,6 +20,10 @@ https://github.com/aaronmed/XQuerySoccerTeam/blob/master/delete.xqm
 * XQuery where a player is modified:  
 https://github.com/aaronmed/XQuerySoccerTeam/blob/master/modify.xqm
 
+  
+* XML with the information of all the players of the team:  
+https://github.com/aaronmed/XQuerySoccerTeam/blob/master/xml/team.xml
+
 ## Acknowledgement
 To obtain the players' information I have used these sources:  
 * https://www.transfermarkt.es :  is a website that has information from the world of football, such as scores, results, transfer news and league schedules.  
