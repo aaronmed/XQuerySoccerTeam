@@ -1,4 +1,4 @@
-# XQuery Soccer Team
+# XQuery Football Teams
 
 Project about the U.D. Las Palmas team to get detailed information about the players of the team, also a CRUD option has been developed in which you can add, modify and delete players.
 
